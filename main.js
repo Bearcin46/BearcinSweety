@@ -24,3 +24,27 @@ function linkAction(){
 }
 
 navLink.forEach(n=>n.addEventListener('click', linkAction))
+
+//email functioning
+function sendMail(){
+    var params={
+        name:document.getElementById("name").value,
+        email:document.getElementById("email").value,
+        message:document.getElementById("message").value,
+
+
+    }
+    const serviceId="service_nw05a9i";
+const templateId="template_5yk5r9n";
+emailjs
+.send(serviceId,templateId,params)
+    .then(
+        res =>{
+            document.getElementById("name").value="";
+            document.getElementById("email").value="";
+            document.getElementById("message").value="";
+            alert("Message Sent Successfully")
+        }
+    )
+.catch((err)=> console.log(err))
+}

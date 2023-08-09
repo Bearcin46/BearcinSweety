@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="icon" type="images/x-icon" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -43,10 +44,15 @@
 
     <main class="main">
       <!--home section-->
+      
       <section class="home bd_grid" id="home">
+        <video autoplay loop muted plays-inline class="back">
+          <source src="./images/Web Design Company video background.mp4" type="video/mp4" >
+        </video>
         <div class="home_data" data-aos="fade-down">
-          <h1 class="home_title">Hi, <br> I'm <span class="home_title-color">Bearcin Sweety</span> <br>Front-end Developer</h1>
-          <a href="#contact" class="button">CONTACT</a>
+          <h1 class="home_title">Hi, <br> I'm <span class="home_title-color">Bearcin Sweety</span> <br><span class="head">Front-end Developer</span></h1>
+          <a href="tel:+60166050498" class="button main-btn">CONTACT</a>
+          <a href="./images/resumeupdate.pdf" download="resume.docx" role="button" class="button main-btn main-btn2">DOWNLOAD CV</a>
         </div>
 
         <div class="home_social">
@@ -73,7 +79,7 @@
         <div>
           <h2 class="about_subtitle" data-aos="fade-down" data-aos-delay="350">I'm Bearcin Sweety</h2>
 
-        <p class="about_text"  data-aos="fade-down" data-aos-delay="450">Front end developers are responsible for creating user-friendly and interactive web pages or applications using programming languages like HTML, CSS, and JavaScript. They work with design and technology to provide a good user experience and are supported by back-end developers who handle server-side logic and integration</p>
+        <p class="about_text"  data-aos="fade-down" data-aos-delay="450">As a Front end developer,I'm responsible for creating user-friendly and interactive web pages or applications using programming languages like HTML, CSS, JavaScript and Reactjs. I love to work with design and technology to provide a good user experience and I collaborate with back-end developers who handle server-side logic and integration</p>
       
     </div>
     </div>
@@ -174,22 +180,7 @@
           <div class="skill_bar skill_rjs"></div>
         </div>
 
-        <!--skills jquery-->
-
-        <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
-          <div class="skills_name">
-            <i class='bx bxl-jquery skill_icon'></i>
-            <span class="skill_name">Jquery</span>
-          </div>
-          <div>
-            <span class="skill
-            _percentage">
-            40%
-            </span>
-          </div>
-
-          <div class="skill_bar skill_jq"></div>
-          </div>
+        
         </div>
 
           <div data-aos="fade-left" data-aos-delay="350">
@@ -206,22 +197,45 @@
 
         <div class="work_container bd_grid" data-aos="fade-down" data-aos-delay="250">
           <div class="work_img">
-            <img src="./images/work1.jpg " alt="pic1">
+            <img src="./images/work1.jpg" alt="pic1">
+            <a href="https://bearcin46.github.io/Landing-page-design">
+              <h1 class="heading">UI/UX DESIGN</h1> 
+          </a>
           </div>
+          <!--2-->
           <div class="work_img">
             <img src="./images/work2.jpg " alt="pic2">
+            <a href="https://bearcin46.github.io/Taco-Shop-website-using-html-and-css">
+              <h1 class="heading">HTML,CSS DESIGN</h1>
+          </a>
           </div>
           <div class="work_img">
             <img src="./images/work3.jpg " alt="pic3">
-          </div>
+            <a href="https://bearcin46.github.io/Personal-webpage">
+              <h1 class="heading">BOOTSTRAP DESIGN</h1>
+          </a>
+            </div>
+
           <div class="work_img">
             <img src="./images/work4.jpg " alt="pic4">
-          </div>
+            <a href="https://bearcin46.github.io/school-website">
+              <h1 class="heading">WEBSITE BUILDING</h1>
+          </a>
+        </div>
+
           <div class="work_img">
             <img src="./images/work5.jpg " alt="pic5">
-          </div>
+            <a href="https://github.com/Bearcin46">
+              <h1 class="heading">ADDITIONAL PROJECT</h1>
+          </a>
+            </div>
+
           <div class="work_img">
             <img src="./images/work6.jpg " alt="pic6">
+            <a href="https://sweetybrzn.blogspot.com/">
+              <h1 class="heading">BLOG</h1>
+          </a>
+           
           </div>
         </div>
       </section>
@@ -231,12 +245,16 @@
         <h2 class="section-title" data-aos="fade-down">CONTACT</h2>
 
         <div class="contact_container bd_grid">
-          <form action="" class="contact_form">
-            <input type="text" placeholder="Name" class="control_input" data-aos="fade-right" data-aos-delay="250">
-            <input type="mail" placeholder="Email" class="control_input" data-aos="fade-right" data-aos-delay="300">
-            <textarea name="" id="" cols="0" rows="10" class="control_input" data-aos="fade-right" data-aos-delay="400"></textarea>
+          <form method="post"  class="contact_form">
 
-            <input type="button" value="Send" class="control_button button" data-aos="fade-right" data-aos-delay="450">
+
+            <input type="text" placeholder="Name" name="Name" id="name" class="control_input" data-aos="fade-right" data-aos-delay="250">
+
+            <input type="email" placeholder="Email" name="Email" id="email" class="control_input" id="email" data-aos="fade-right" data-aos-delay="300">
+
+            <textarea name="Message" id="message" cols="0" rows="10" class="control_input" data-aos="fade-right" data-aos-delay="400"></textarea>
+
+            <input type="button" value="Send Email" class="control_button button" data-aos="fade-right" data-aos-delay="450" onclick="sendMail()">
           </form>
         </div>
       </section>
@@ -255,10 +273,12 @@
           
           
         </div>
-        <p data-aos="fade-down" data-aos-delay="250">&#169; 2023 all  copyrights reserved</p>
+        <p>&#169; 2023 all  copyrights reserved</p>
       </footer>
     </main>
     <!--script-->
+    
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script> 
     <script>
@@ -267,5 +287,13 @@
         once:false,
       });
     </script>
+   <script type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+ emailjs.init("b55pHQcsHBvUQir72");
+})();
+</script>
 </body>
 </html>
