@@ -1,8 +1,8 @@
 /* Google Font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Variables */
-body{
-  background-color:#322f2f;
+body {
+  background-color: #322f2f;
 }
 :root {
   --header-height: 3rem;
@@ -12,10 +12,9 @@ body{
 /* Colors */
 
 :root {
-  --first-color:#09C6F9;
+  --first-color: #09c6f9;
   --second-color: royalblue;
-  --gradient-color: #09C6F9;
-  ;
+  --gradient-color: #09c6f9;
 }
 
 /* FONT STYLE */
@@ -93,29 +92,28 @@ img {
   display: block;
 }
 /*video background*/
-.back{
-  position:absolute;
-  right:0;
-  bottom:0;
+.back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   z-index: -1;
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
   opacity: 0.5;
-  }
-@media(min-aspect-ratio:16/9){
-  .back{
-    width:100%;
-    height:auto;
+}
+@media (min-aspect-ratio: 16/9) {
+  .back {
+    width: 100%;
+    height: auto;
   }
 }
-@media(max-aspect-ratio:16/9){
-  .back{
-    width:auto;
-    height:100%;
+@media (max-aspect-ratio: 16/9) {
+  .back {
+    width: auto;
+    height: 100%;
   }
 }
-
 
 /* CUSTOM CSS CLASSES */
 
@@ -137,8 +135,6 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: transparent;
-
- 
 }
 
 /* Navbar */
@@ -148,38 +144,38 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
-  
 }
 
- /*typing animation effect*/
- @keyframes typing{
-  from{
-    width:0;}
-  to{width:70%}
+/*typing animation effect*/
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
 }
 
- .head{
-  
+.head {
   display: inline-block;
-  animation:typing 4s steps(30,end) ;
+  animation: typing 4s steps(30, end);
   white-space: nowrap;
   border-right: 2px solid;
   overflow: hidden;
- }
+}
 
- /*main home screen button*/
- .home .main-btn{
-    padding:10px 30px;
-    border:2px solid #fff724;
-    color:#fff724;
-    background: #000;
- }
- .home .main-btn2{
-    margin-left: 6px;
-    background: #fff724;
-    color:#000;
-    
- }
+/*main home screen button*/
+.home .main-btn {
+  padding: 10px 30px;
+  border: 2px solid #fff724;
+  color: #fff724;
+  background: #000;
+}
+.home .main-btn2 {
+  margin-left: 6px;
+  background: #fff724;
+  color: #000;
+}
 
 @media screen and (max-width: 768px) {
   .nav_menu {
@@ -190,14 +186,14 @@ img {
     height: 100%;
     padding: 2rem;
     background-color: #045de9;
-  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
     transition: 0.5s;
   }
 }
 
 .nav_items {
   margin-bottom: var(--mb-4);
-  color:var(--first-color);
+  color: var(--first-color);
 }
 
 .nav_link {
@@ -220,12 +216,12 @@ img {
 }
 
 .nav_logo {
-  color:#fff724;
-  font-weight:600;
+  color: #fff724;
+  font-weight: 600;
 }
 
 .nav_toggle {
-  color: 	#fff724;
+  color: #fff724;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -246,16 +242,16 @@ img {
 }
 
 /*video*/
-.back{
-  position:absolute;
-  right:0;
-  bottom:0;
+.back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   z-index: -1;
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
   opacity: 0.5;
-  }
+}
 .home {
   height: calc(100vh - 3rem);
   row-gap: 1rem;
@@ -268,15 +264,12 @@ img {
 .home_title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-3);
-  color:#09C6F9;
+  color: #09c6f9;
 }
 
 .home_title-color {
   color: aliceblue;
- 
-
 }
-
 
 .home_social {
   display: flex;
@@ -287,8 +280,7 @@ img {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
- color: #fff724;
- 
+  color: #fff724;
 }
 
 .home_social-icon:hover {
@@ -356,8 +348,7 @@ img {
 
 .about_subtitle {
   margin-bottom: var(--mb-2);
-  color:#09C6F9
-  ;
+  color: #09c6f9;
 }
 
 .about_img {
@@ -368,8 +359,8 @@ img {
   width: 300px;
   border-radius: 0.5rem;
 }
-.about_text{
-  color:aliceblue;
+.about_text {
+  color: aliceblue;
   text-align: justify;
 }
 
@@ -381,8 +372,7 @@ img {
 
 .skills_subtitle {
   margin-bottom: var(--mb-2);
-  color:#09C6F9
-  ;
+  color: #09c6f9;
 }
 
 .skills_text {
@@ -439,9 +429,8 @@ img {
 }
 
 .skill_rjs {
-  width: 55%;
+  width: 75%;
 }
-
 
 /* WORK */
 
@@ -465,26 +454,26 @@ img {
   cursor: pointer;
 }
 .work_img:hover img {
- opacity:0.3;
+  opacity: 0.3;
 }
 
 .work_img img:hover {
   transform: scale(1.1);
 }
 
-.heading{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  opacity:0;
-  background-color: rgba(o,o,o,0.7);
-  color:var(--first-color);
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: rgba(o, o, o, 0.7);
+  color: var(--first-color);
   padding: 10px;
-  transition:opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
-.work_img:hover .heading{
-  opacity:1;
+.work_img:hover .heading {
+  opacity: 1;
 }
 /* Contact */
 
@@ -573,20 +562,22 @@ img {
     color: aliceblue;
   }
 
-  @keyframes typing{
-    from{
-      width:0;}
-    to{width:55%}
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 55%;
+    }
   }
-  
-   .head{
-    
+
+  .head {
     display: inline-block;
-    animation:typing 4s steps(30,end) ;
+    animation: typing 4s steps(30, end);
     white-space: nowrap;
     border-right: 2px solid;
     overflow: hidden;
-   }
+  }
   .home {
     height: 100vh;
   }
